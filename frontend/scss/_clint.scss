@@ -1,0 +1,83 @@
+// Client Area CSS
+
+.single-client-review-card {
+    border-bottom: 2px dashed $second;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+
+    &:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .client-image {
+        img {
+            border-radius: 15px;
+        }
+    }
+
+    .client-content-text {
+        .client-info {
+            margin-bottom: 30px;
+
+            h2 {
+                color: #fff;
+                font-size: 32px;
+                margin-bottom: 0;
+                text-transform: capitalize;
+                font-weight: 600;
+            }
+
+            .rating-text {
+                color: #fff;
+                font-weight: 500;
+                font-size: 16px;
+                margin-bottom: 0;
+
+                span {
+                    font-size: 30px;
+                    color: $primary;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        p {
+            font-size: 20px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.pagination-area {
+    .page-link {
+        color: $heading;
+        text-decoration: none;
+        background-color: $primary;
+        border: none;
+    }
+
+    .page-item.active .page-link {
+        z-index: 3;
+        color: #fff;
+        background-color: $second;
+        border-color: $second;
+    }
+
+    .page-link:hover {
+        background-color: $second;
+        color: #fff;
+    }
+
+    .page-item.disabled .page-link {
+        color: $heading;
+        background-color: $primary;
+    }
+    .page-link {
+	padding: 10px 20px;
+	font-size: 18px;
+}
+.pagination {
+	@include justify-content-center
+}
+}

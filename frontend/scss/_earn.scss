@@ -1,0 +1,91 @@
+// Earn Money Step Area Css
+
+.single-earn-money-card {
+    border-bottom: 2px solid $primary;
+    border-radius: 0 0 11px 11px;
+    margin-bottom: 50px;
+
+
+    .earn-money-icon {
+        @include transition-duration(400ms);
+
+        img {
+            width: 80px;
+            margin-bottom: 20px;
+        }
+
+    }
+
+    h3 {
+        font-size: 28px;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    p {
+        margin-bottom: 0;
+        font-size: 18px;
+        padding-bottom: 40px;
+        border-radius: 15px;
+    }
+
+    &:hover {
+        .earn-money-icon {
+            transform: translateY(-10px);
+        }
+    }
+}
+
+.single-add-area {
+    position: relative;
+    margin-bottom: 50px;
+
+    .earn-image {
+        position: relative;
+        flex: 0 0 150px;
+        width: 150px;
+
+        img {
+            width: 100%;
+            border-radius: 15px;
+        }
+    }
+
+    .earn-content-text {
+        padding-left: 30px;
+        h4 {
+            color: #fff;
+            font-size: 22px;
+            font-weight: 500;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .add-btn-2 {
+            background-color: #fff;
+            padding: 7px 20px;
+            display: inline-block;
+            border-radius: 22px;
+            font-size: 16px;
+            @include transition-duration(700ms);
+
+            &:hover {
+                background-color: $primary;
+                color: #fff;
+            }
+        }
+
+        h6 {
+            color: rgba(255, 255, 255, 0.80);
+            z-index: 2;
+            margin-bottom: 30px;
+            font-weight: 500;
+            font-size: 15px;
+            border-left: 2px solid $second;
+            padding-left: 10px;
+        }
+    }
+
+
+}

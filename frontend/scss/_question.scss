@@ -1,0 +1,22 @@
+.have-any-question-area {
+    .accordion-item.panel {
+        margin-bottom: 20px;
+    }
+
+    .accordion-title a {
+        font-size: 18px;
+        padding: 10px 15px;
+        display: block;
+        font-weight: 600;
+    }
+
+    .accordion-item {
+        border-bottom: 1px solid #e0e1eb;
+        border-radius: 2px;
+    }
+
+    .accordion-content p {
+        padding: 0 15px 15px 15px;
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,86 @@
+/* Normal desktop :1200px. */
+
+@media (min-width: 1200px) and (max-width: 7000px) {}
+
+
+/* Normal desktop :992px. */
+
+@media (min-width: 992px) and (max-width: 1198px) {
+    .col-lg-4 {
+        width: 40%;
+    }
+    .col-lg-8 {
+        width: 60%;
+    }
+    .calculation-submit-btn button {
+        white-space: nowrap;
+        padding: 15px 20px;
+    }
+}
+
+
+/* Tablet desktop :768px. */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-lg-4 {
+        width: 40%;
+    }
+    .col-lg-8 {
+        width: 60%;
+    }
+    .calculation-submit-btn button {
+        white-space: nowrap;
+        padding: 15px 20px;
+    }
+}
+
+
+/* small mobile :320px. */
+
+@media (min-width: 499px) and (max-width: 767px) {
+    .calculation-submit-btn button {
+        white-space: nowrap;
+        padding: 15px 20px;
+    }
+    .col-lg-4 {
+        display: none;
+    }
+    .header-area {
+        min-height: 100px;
+    }
+    .header-logo {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .header-right-area.f-right {
+        text-align: center;
+        float: none;
+    }
+    .header-calculation-area {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 250px) and (max-width: 500px) {
+    .calculation-submit-btn button {
+        white-space: nowrap;
+        padding: 15px 20px;
+    }
+    .col-lg-4 {
+        display: none;
+    }
+    .header-area {
+        min-height: 100px;
+    }
+    .header-logo {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .header-right-area.f-right {
+        text-align: center;
+        float: none;
+    }
+    .header-calculation-area {
+        justify-content: center;
+    }
+}

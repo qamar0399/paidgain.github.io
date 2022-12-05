@@ -1,0 +1,182 @@
+/* :: Reboot CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-weight: 500;
+    font-size: 16px;
+    width: 100%;
+    color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font;
+    color: $heading;
+    line-height: 1.2;
+    font-weight: 700;
+
+}
+
+a,
+a:active,
+a:focus,
+a:hover {
+    color: $heading;
+    text-decoration: none;
+    @include transition-duration(500ms);
+    outline: none;
+    font-weight: 500;
+    font-family: $font;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    line-height: 1.7;
+    color: $text;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: $font2;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.bg-overlay {
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background-color: rgba(39, 1, 88, 0.92);
+    }
+}
+
+.bg-img {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.bg-boxshadow {
+    @include box-shadow(0 5px 20px 9px rgba(0, 0, 0, 0.07));
+}
+
+.bg-fixed {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+textarea:invalid,
+input:invalid,
+textarea:required,
+input:required {
+    box-shadow: none !important;
+}
+
+.section-padding-0-100 {
+    padding-top: 0;
+    padding-bottom: 100px;
+}
+
+.section-padding-100-50 {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.section-padding-0-50 {
+    padding-top: 0;
+    padding-bottom: 50px;
+}
+
+.section-padding-100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.section-padding-50 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.section-padding-100-50 {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+
+.heading-title {
+    margin-bottom: 70px;
+
+    h3 {
+        font-size: 40px;
+        color: #fff;
+        text-transform: capitalize;
+
+          @media #{$breakpoint-xs} {
+           font-size: 26px;
+        }
+    }
+
+    p {
+        font-size: 18px;
+        margin-bottom: 0;
+
+         @media #{$breakpoint-xs} {
+           font-size: 16px;
+        }
+    }
+
+}
+
+
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}

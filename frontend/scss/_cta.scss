@@ -1,0 +1,41 @@
+//  Call to action CSS 
+
+.cta-area {
+    background-color: $second;
+
+    .cta-content-text {
+        h2 {
+            font-size: 54px;
+
+            @media #{$breakpoint-xs} {
+                font-size: 40px;
+            }
+
+            @media #{$breakpoint-md} {
+                font-size: 50px;
+            }
+        }
+
+        p {
+            color: #fff;
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+    }
+
+    .cta-btn {
+        border: 2px solid #fff;
+        padding: 15px 30px;
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+        display: inline-block;
+        color: #fff;
+        @include transition-duration(700ms);
+
+        &:hover {
+            background-color: #fff;
+            color: $primary;
+        }
+    }
+}

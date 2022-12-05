@@ -1,0 +1,97 @@
+// Top Investor Css Area
+
+.top-investor-card {
+    margin-bottom: 70px;
+    position: relative;
+    overflow: hidden;
+
+    .investor-image {
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        @include transition-duration(500ms);
+        @include box-shadow(0 0 0 0 rgba(236, 89, 31, .10));
+
+        img{
+            border-radius: 5px;
+        }
+    }
+
+    .invest-info {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 9;
+        background-color: $second;
+        width: 270px;
+        padding: 20px 15px;
+        text-align: center;
+        border-radius: 5px;
+
+        h4{
+            margin-bottom: 3px;
+        }
+
+        P {
+            margin-bottom: 0;
+            color: rgba(255, 255, 255, 0.70);
+            font-size: 18px;
+
+            span {
+                color: #fff;
+                letter-spacing: 1px;
+            }
+        }
+    }
+
+    &:hover .investor-image {
+        transform: scale(1.2);
+    }
+}
+
+.invest-ani {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-name: bounce_fountainG;
+    animation-name: bounce_fountainG;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+}
+
+@-webkit-keyframes bounce_fountainG {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    50% {
+        -webkit-transform: translateY(6px);
+        transform: translateY(05px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce_fountainG {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    50% {
+        -webkit-transform: translateY(6px);
+        transform: translateY(10px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}

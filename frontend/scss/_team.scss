@@ -1,0 +1,52 @@
+// Team css Area
+
+.single-team-member {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 50px;
+
+    .team-image {
+        position: relative;
+        z-index: 1;
+
+
+        img {
+            @include transition-duration(2000ms);
+            width: 100%;
+
+            
+        }
+    }
+
+    .team-content-text {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        border-left: 2px solid $primary;
+        padding-left: 15px;
+        z-index: 9;
+
+        h5 {
+            font-size: 22px;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        p {
+            margin-bottom: 0;
+            text-transform: uppercase;
+            font-size: 18px;
+            letter-spacing: 3px;
+            color: $primary;
+        }
+    }
+
+    &:hover {
+        .team-image {
+
+            img {
+                transform: scale(1.5);
+            }
+        }
+    }
+}

@@ -1,0 +1,96 @@
+.f-right {
+    float: right;
+}
+
+.header-area {
+    padding: 21px 0;
+}
+
+.header-logo img {
+    height: 50px;
+}
+
+.header-calculation-area {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.ads-show {
+    background: #f8f9f9;
+    height: 100vh;
+}
+
+.header-calculation-area input {
+    border: none;
+    background: aliceblue;
+    height: 60px;
+    border-radius: 5px;
+    width: 120px;
+    font-size: 21px;
+    padding: 0 17px;
+}
+
+.calculation-middle-icon svg {
+    fill: #333;
+    font-weight: 700;
+    width: 25px;
+    height: 25px;
+}
+
+.calculation-middle-icon {
+    padding: 0 15px;
+}
+
+.calculation-last-icon {
+    color: #000;
+    font-size: 38px;
+    padding: 0 15px;
+    font-weight: 200;
+}
+
+.calculation-submit-btn button {
+    border: none;
+    background: #ec5a1f;
+    color: #fff;
+    padding: 15px 40px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+.ads-show iframe {
+    width: 100%;
+    height: 100vh;
+}
+
+#progress_bar {
+    height: 8px;
+    margin-top: -10px;
+}
+
+.calculation-submit-btn button.disabled {
+    cursor: no-drop;
+}
+
+.bg-color {
+    background: antiquewhite;
+}
+
+.expire-area {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.expire-area h4 {
+    font-weight: 200;
+    font-size: 50px;
+}
+
+.expire-area h4 {
+    font-weight: 200;
+    font-size: 50px;
+    margin-top: -70px;
+}

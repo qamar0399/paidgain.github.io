@@ -1,0 +1,137 @@
+// Payout Css Area
+
+.payout-title {
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 600;
+    border-bottom: 2px solid $primary;
+    padding-bottom: 20px;
+}
+
+.single-payout-list {
+    background-color: #0f0826;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+
+    .payout-auth-info {
+        .payout-auth-img {
+            flex: 0 0 70px;
+            max-width: 70px;
+            width: 70px;
+            margin-right: 20px;
+
+            img {
+                border-radius: 13%;
+                position: relative;
+            }
+
+        }
+
+        .auth-info {
+            h4 {
+                color: #ffff;
+                margin-bottom: 3px;
+                font-weight: 600;
+                font-size: 20px;
+            }
+
+            p {
+                margin-bottom: 0;
+                font-size: 15px;
+            }
+        }
+
+    }
+
+    .payout-info {
+
+         @media #{$breakpoint-xs} {
+       margin-top: 20px;
+    }
+        h5 {
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.90);
+            font-size: 17px;
+            margin-bottom: 0;
+
+            span {
+                color: $primary;
+            }
+        }
+
+        p {
+            margin-bottom: 5px;
+        }
+
+    }
+
+}
+
+.payout-image {
+    position: relative;
+     @media #{$breakpoint-xs} {
+       display: none;
+    }
+
+     @media #{$breakpoint-md} {
+       display: none;
+    }
+
+    .payout-shape {
+        position: absolute;
+        top: 50%;
+        left: 15%;
+        opacity: 0.80;
+        -webkit-animation-delay: 1s;
+        animation-delay: 1s;
+        -webkit-animation-name: bounce_fountainG;
+        animation-name: bounce_fountainG;
+        -webkit-animation-duration: 43s;
+        animation-duration: 3s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-direction: normal;
+        animation-direction: normal;
+
+        img {
+            width: 100px;
+        }
+    }
+}
+
+
+@-webkit-keyframes bounce_fountainG {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    50% {
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce_fountainG {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    50% {
+        -webkit-transform: translateY(10px);
+        transform: translateY(15px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}

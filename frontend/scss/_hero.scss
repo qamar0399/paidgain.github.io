@@ -1,0 +1,133 @@
+// Welcome Area Css
+
+.welcome-area {
+    height: 900px;
+    position: relative;
+
+    @media #{$breakpoint-xs} {
+        height: 600px;
+    }
+
+     @media #{$breakpoint-md} {
+        height: 700px;
+    }
+
+    @media #{$breakpoint-lg} {
+        height: 750px;
+    }
+
+    .welcome-text {
+        position: relative;
+        z-index: 9 !important;
+        padding-top: 30px;
+
+          @media #{$breakpoint-md} {
+            padding-top: 150px;
+        }
+
+          @media #{$breakpoint-xs} {
+            padding-top: 100px;
+        }
+
+        h2 {
+            font-size: 70px;
+            color: #fff;
+            margin-bottom: 15px;
+
+            @media #{$breakpoint-xs} {
+                font-size: 40px;
+            }
+
+              @media #{$breakpoint-md} {
+                font-size: 54px;
+            }
+
+            @media #{$breakpoint-lg} {
+                font-size: 54px;
+            }
+        }
+
+        p {
+            font-size: 22px;
+            color: #fff;
+            margin-bottom: 50px;
+
+             @media #{$breakpoint-xs} {
+                font-size: 18px;
+            }
+        }
+
+        .money-shape-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 0.15;
+
+            img {
+                width: 300px;
+            }
+        }
+
+    }
+}
+
+.welcome-image {
+    padding-top: 30px;
+
+    @media #{$breakpoint-xs} {
+        display: none;
+    }
+
+     @media #{$breakpoint-md} {
+        display: none;
+    }
+}
+
+
+.welcome-thumb {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-name: bounce_fountainG;
+    animation-name: bounce_fountainG;
+    -webkit-animation-duration: 43s;
+    animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+}
+
+@-webkit-keyframes bounce_fountainG {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    50% {
+        -webkit-transform: translateY(15px);
+        transform: translateY(15px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce_fountainG {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    50% {
+        -webkit-transform: translateY(15px);
+        transform: translateY(15px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}

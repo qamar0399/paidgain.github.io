@@ -1,0 +1,57 @@
+// Price Table Area Css
+
+.single-price-table {
+    background-color: $second;
+    padding: 40px 30px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+
+    .price-title {
+        margin-bottom: 20px;
+
+        h4 {
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        span {
+            font-size: 18px;
+        }
+    }
+
+    h2 {
+        font-size: 54px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #111;
+        padding-bottom: 30px;
+    }
+
+    .price-body {
+        li {
+            font-size: 18px;
+            margin-bottom: 15px;
+            @include transition(500ms);
+
+            &:hover {
+                transform: translateX(-5px);
+            }
+        }
+    }
+
+    .price-btn {
+        background-color: #fff;
+        padding: 7px 25px;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 22px;
+        text-transform: capitalize;
+        margin-top: 20px;
+        color: #111;
+        @include transition-duration(700ms);
+
+        &:hover {
+            color: $second;
+        }
+    }
+}

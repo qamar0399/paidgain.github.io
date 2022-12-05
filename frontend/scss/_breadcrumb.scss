@@ -1,0 +1,49 @@
+// Breadcrumb CSS  Area
+
+.breadcrumb-area {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    height: 300px;
+    position: relative;
+
+    .breadcrumb-content {
+        padding-top: 60px;
+        z-index: 2;
+        position: relative;
+
+    }
+
+    .faq-shape-img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+        opacity: 0.10;
+
+        img {
+            width: 300px;
+        }
+
+        &.two {
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+
+
+    .breadcrumb {
+        border-left: 2px solid $second;
+        padding-left: 15px;
+
+        .breadcrumb-item {
+            color: #fff;
+            font-size: 22px;
+            font-weight: 600;
+
+
+            a {
+                color: rgba(255, 255, 255, 0.70);
+            }
+        }
+    }
+}

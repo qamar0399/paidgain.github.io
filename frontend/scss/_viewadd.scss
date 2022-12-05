@@ -1,0 +1,105 @@
+// View Add Area Css
+
+.view-add-area {
+    .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+        background: rgba(236, 89, 31, 0.50);
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: $primary;
+    }
+
+    .swiper-slide {
+        margin-top: 15px;
+    }
+
+    .swiper-slide {
+        position: relative;
+        @include transition-duration(500ms);
+        overflow: hidden;
+
+        .add-image {
+            position: relative;
+
+            img {
+                width: 100%;
+                border-radius: 5px;
+            }
+        }
+
+        h4 {
+            position: absolute;
+            top: 0;
+            z-index: 5;
+            padding: 12px;
+            background-color: $second;
+            display: block;
+            font-size: 18px;
+            width: 100%;
+            color: rgba(255, 255, 255, 0.85);
+            font-weight: 500;
+            text-transform: capitalize;
+            border-radius: 5px 5px 0 0;
+        }
+
+        h6 {
+            position: absolute;
+            color: rgba(255, 255, 255, 0.95);
+            bottom: 20px;
+            margin-left: 20px;
+            text-transform: capitalize;
+            font-weight: 500;
+            font-size: 16px;
+            border-left: 2px solid $primary;
+            padding-left: 10px;
+            margin-bottom: 0;
+            z-index: 9;
+        }
+
+        .add-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            color: #fff;
+            z-index: 9;
+            transform: translate(-50%);
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            @include transition-duration(700ms);
+            opacity: 0;
+
+             @media #{$breakpoint-lg} {
+       font-size: 17px;
+    }
+        }
+
+        &::after {
+           background: rgba(236, 89, 31, 0.80);
+            content: "";
+            position: absolute;
+            top: -550px;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            @include transition-duration(700ms);
+            border-radius: 5px;
+            z-index: 1;
+        }
+
+        &:hover {
+            &::after {
+                top: 40px;
+            }
+
+            .add-btn {
+                opacity: 1;
+
+                &:hover {
+                    color: $heading;
+                }
+            }
+        }
+    }
+}

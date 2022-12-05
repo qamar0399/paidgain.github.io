@@ -1,0 +1,51 @@
+// Counter Area CSS
+
+.single-counter-area{
+     border: 2px solid $second;
+.counter-header-area {
+    .icon {
+        background-color: $second;
+        height: 100px;
+        flex: 0 0 100px;
+        max-width: 100px;
+        width: 100px;
+        display: inline-block;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 100px;
+        position: relative;
+        left: 30px;
+
+        &.two {
+            background-color: $primary;
+        }
+
+        &.three {
+            background-color: #0f0826;
+        }
+    }
+
+    .counter-header-text {
+        padding: 40px 0;
+        padding-left: 50px;
+        width: 100%;
+        border-radius: 3px;
+
+        h2 {
+            font-size: 44px;
+            color: #fff;
+        }
+
+        h6 {
+            font-size: 20px;
+            margin-bottom: 0;
+            color: $text;
+            font-weight: 600;
+
+            @media #{$breakpoint-lg} {
+                line-height: 1.4;
+            }
+        }
+    }
+}
+}

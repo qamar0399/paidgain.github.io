@@ -1,0 +1,80 @@
+/* :: Footer CSS */
+.footer-contact-area {
+    background-color: #0f0826;
+
+    .footer-single-widget {
+
+         @media #{$breakpoint-xs} {
+               text-align: center;
+            }
+        h4 {
+            color: #fff;
+            font-weight: 500;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            li {
+                margin-bottom: 15px;
+
+                a {
+                    color: rgba(255, 255, 255, 0.70);
+                    @include transition-duration(500ms);
+
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer-logo{
+    margin-bottom: 20px;
+    a{
+        img{
+            width: 150px;
+        }
+    }
+}
+
+.footer-area {
+    background-color: #0f0826;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.footer-social {
+    text-align: center;
+
+    li {
+        display: inline-block;
+
+        a {
+            i {
+                color: #fff;
+                height: 40px;
+                width: 40px;
+                line-height: 40px;
+                display: inline-block;
+                text-align: center;
+                background-color: $primary;
+                margin: 0 5px;
+                border-radius: 3px;
+                font-size: 18px;
+                @include transition-duration(400ms);
+
+                &:hover {
+                    background-color: $second;
+                }
+            }
+
+        }
+    }
+}
+
+.copy-right-area p {
+    margin-bottom: 0;
+    margin-top: 20px;
+}

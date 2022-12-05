@@ -1,0 +1,112 @@
+/* ----------------------------------------------------------
+[Master Stylesheet]
+
+Template Name: Ptclot
+Template Author: 
+Version: 1.0.0
+
+[Table of Contents]
+    
+    * Google Fonts
+    * Include Third Party CSS Library
+        + Bootstrap CSS
+        + Animate CSS
+        + Barfilar CSS
+        + Swiper CSS
+        + Font Awesome CSS
+    * Template Mixins
+        + Flex
+        + Miscellaneous
+    * Template Responsive
+    * Template Variables
+    * Core Styles
+        + Reboot CSS
+        + Shortcodes CSS
+    * Components
+            + Reboot
+            + Preloader
+            + Heading
+            + Scrool
+            + Buttons
+            + Header
+            + Hero
+            + Earn
+            + Benefit
+            + Counter
+            + Breadcrumb
+            + Blog
+            + Clint
+            + Cta
+            + Footer
+            + Viewadd
+            + Payout
+            + Team
+            + About
+            + Footer
+            + Faq
+            + Price
+            + Invest
+            + Clint
+            + Authnticaion
+            + Dashboard
+            + Responsive
+            
+----------------------------------------------------------
+[font-family]
+
+
+
+--------------------------------------------------- */
+
+/* Import Fonts & All CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500&family=Work+Sans:wght@500;600;700;800&display=swap');
+@import 'css/bootstrap.min.css';
+@import 'css/animate.css';
+@import 'css/owl.carousel.min.css';
+@import 'css/magnific-popup.css';
+@import 'css/font-awesome.min.css';
+@import 'css/menu.css';
+@import 'css/aos.css';
+@import 'css/swiper-bundle.min.css';
+
+// Utilities
+
+@import "utilities/fonts";
+@import "utilities/variables";
+@import "utilities/responsive";
+@import "utilities/color";
+
+// Mixins
+
+@import "mixins/flex";
+@import "mixins/miscellaneous";
+
+// Stylesheet
+
+@import "reboot";
+@import "preloader";
+@import "heading";
+@import "scrool";
+@import "buttons";
+@import "header";
+@import "hero";
+@import "earn";
+@import "benefit";
+@import "counter";
+@import "breadcrumb";
+@import "blog";
+@import "cta";
+@import "footer";
+@import "viewadd";
+@import "payout";
+@import "team";
+@import "about";
+@import "faq";
+@import "price";
+@import "invest";
+@import "clint";
+@import "authnticaion";
+@import "dashboard";
+@import "responsive";
+@import "bootstraping";
